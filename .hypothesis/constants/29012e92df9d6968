@@ -1,0 +1,4 @@
+# file: c:\Users\phia\Documents\KU_SoftwareTest\modern-python-testing-login-full\app\main.py
+# hypothesis_version: 6.151.9
+
+[400, 401, '/', '/api/login', '/health', '/login', '1.0.0', 'Invalid credentials', 'Invalid input', 'Login password', 'Login username', 'app/templates', 'description', 'fake-jwt-token', 'invalid credentials', 'invalid input', 'login success', 'ok', 'status']

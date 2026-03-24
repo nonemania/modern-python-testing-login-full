@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+httpx
+jinja2
+python-multipart
+pytest
+hypothesis
+schemathesis
+playwright
+pytest-playwright
