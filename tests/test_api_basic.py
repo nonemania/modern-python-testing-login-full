@@ -33,10 +33,18 @@ def test_api_login_invalid_credentials():
     assert response.json()["detail"] == "invalid credentials"
 
 
-def test_api_login_invalid_input():
+def test_api_login_schema_validation_error():
     response = client.post(
         "/api/login",
         json={"username": "", "password": ""},
+    )
+    assert response.status_code == 422
+
+
+def test_api_login_invalid_input_but_schema_valid():
+    response = client.post(
+        "/api/login",
+        json={"username": "   ", "password": "1234"},
     )
     assert response.status_code == 400
     assert response.json()["detail"] == "invalid input"

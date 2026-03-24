@@ -15,16 +15,17 @@ modern-python-testing-login-full/
 ├─ app/
 │  ├─ auth.py
 │  ├─ main.py
-│  └─ templates/login.html
+│  └─ templates/
+│     └─ login.html   # optional / reserved template file
 ├─ tests/
 │  ├─ conftest.py
 │  ├─ test_logic_hypothesis.py
 │  ├─ test_api_basic.py
 │  ├─ test_api_schemathesis.py
 │  └─ test_ui_playwright.py
-├─ .vscode/settings.json
 ├─ pytest.ini
 ├─ requirements.txt
+├─ .gitignore
 └─ scripts/
 ```
 
