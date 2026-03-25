@@ -121,3 +121,10 @@ pytest -v tests/test_ui_playwright.py
 - The HTML routes (`/` and `/login`) are hidden from OpenAPI so Schemathesis focuses on the API routes.
 - The Playwright tests use a fixture in `tests/conftest.py` that starts the server automatically.
 - This project is designed for teaching/demo purposes, not production authentication.
+
+## Compare and Summary Tools
+- Hypothesis คือ Python Library สำหรับการทำ Testing ที่เปลี่ยนจากการสุ่มมั่วๆ มาเป็นการสุ่มแบบมีกลยุทธ์ เพื่อหาจุดบกพร่องที่เรานึกไม่ถึง
+สรุปคือ มันคือเครื่องมือที่ช่วยให้เราเขียน Test น้อยลง แต่ได้ความมั่นใจในคุณภาพ Software มากขึ้น
+- TestClient คือ เครื่องมือที่ช่วยให้เรา "จำลองการใช้งานจริง" (Terminal) โดยไม่ต้องเปิดหน้าเว็บจริงและรวดเร็วกว่าการเทสด้วยมือหลายเท่า
+- Schemathesis คิอ เครื่องมือทดสอบ API แบบอัตโนมัติขั้นสูง ที่ฉลาดกว่าการเขียน Unit Test ทั่วไป เหมือนเรา "จ้างบริษัทตรวจบ้าน" เอาเครื่องมือมาสแกนทุกซอกทุกมุมและทำเช็คลิสต์ตรวจสอบความเรียบร้อยแบบเป็นระบบ
+- Playwright คือเครื่องมือ Open-source สำหรับการทำ Automated Testing บนเว็บเบราว์เซอร์ (เช่น Chrome, Firefox, Safari) พัฒนาโดย Microsoft จุดเด่นคือทำงานได้รวดเร็วและสามารถโต้ตอบกับหน้าเว็บได้เหมือนที่มนุษย์ทำจริงๆ (คลิก, พิมพ์, รอข้อความปรากฏ)
