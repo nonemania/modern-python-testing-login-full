@@ -1,3 +1,5 @@
+# auth.py - Authentication logic for the login system. 
+# การเช็คว่าข้อมูลที่ผู้ใช้กรอกมานั้น "ถูกรูปแบบ" และ "รหัสผ่านถูกต้อง" หรือไม่ ก่อนจะอนุญาตให้เข้าหน้า Dashboard ได้
 from __future__ import annotations
 
 

@@ -1,3 +1,4 @@
+#หลักของเว็บแอปพลิเคชันที่สร้างด้วย FastAPI ซึ่งมีฟังก์ชันสำหรับการแสดงหน้าแรก, การจัดการการเข้าสู่ระบบผ่านฟอร์ม HTML และ API สำหรับการเข้าสู่ระบบแบบ JSON โดยใช้ Pydantic สำหรับการตรวจสอบข้อมูลที่รับเข้ามา
 from __future__ import annotations
 
 from fastapi import FastAPI, Form, HTTPException, Request, status

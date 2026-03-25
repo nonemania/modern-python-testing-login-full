@@ -1,3 +1,4 @@
+#ไฟล์ตั้งค่าส่วนกลาง สำหรับการทดสอบด้วย Playwright และ Uvicorn
 from __future__ import annotations
 
 import socket
