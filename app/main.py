@@ -4,7 +4,7 @@ from __future__ import annotations
 from fastapi import FastAPI, Form, HTTPException, Request, status
 from fastapi.responses import HTMLResponse
 from fastapi.templating import Jinja2Templates
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, ConfigDict, Field
 
 from app.auth import authenticate, validate_login_input
 
@@ -13,6 +13,8 @@ templates = Jinja2Templates(directory="app/templates")
 
 
 class LoginRequest(BaseModel):
+    model_config = ConfigDict(extra="forbid")
+
     username: str = Field(..., min_length=1, max_length=50, description="Login username")
     password: str = Field(..., min_length=4, max_length=20, description="Login password")
 
